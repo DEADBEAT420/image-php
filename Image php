@@ -1,0 +1,18 @@
+Steps for PHP docker file. 
+make dockerfile (no extension) 
+FROM php
+COPY ./ index.php ./
+EXPOSE 5000
+CMD ["php", "-S","0.0.0.0:5000"]
+
+
+
+
+docker cmd 
+
+docker . build -t images/php
+
+docker run --name= php-server -p=5000:5000 images/php
+
+
+make index.php
